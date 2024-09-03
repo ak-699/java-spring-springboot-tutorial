@@ -6,6 +6,9 @@
 
     <!-- bean definitions here -->
     <bean id="myBean" class="car.example.bean.MyBean" >
+<!--        In property tag define the name and value for the property to be assigned in bean-->
+<!--        when we set a property spring IOC calls the corresponding setter -->
+<!--        so if value needs to be set for a property it must have corresponding setter-->
         <property name="message" value="I am the first bean"></property>
     </bean>
 </beans>
