@@ -1,8 +1,8 @@
 package car.example.constructor.injection;
 
 public class Car {
-    private Specification carSpecification;
+    private Specification specification;
     public void displayDetails() {
-        System.out.println("Car details: "+carSpecification);
+        System.out.println("Car details: "+ specification);
     }
 }
