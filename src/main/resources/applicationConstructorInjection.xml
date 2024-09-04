@@ -9,4 +9,7 @@
         <property name="make" value="Toyota" />
         <property name="model" value="Corolla" />
     </bean>
+    <bean id="myCar" class="car.example.constructor.injection.Car">
+        <constructor-arg ref="carSpecification" />
+    </bean>
 </beans>
