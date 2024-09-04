@@ -8,7 +8,7 @@ public class LooseCouplingExample {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationLooseCoupling.xml");
 
         UserDataProvider userDatabaseProvider = (UserDataProvider) context.getBean("myDatabaseProvider");
-        UserManager userManager1 = new UserManager(userDatabaseProvider);
+        UserManager userManager1 = (UserManager) context.getBean("myUserManager");
         System.out.println(userManager1.getUserInfo());
 
         UserDataProvider userWebServiceDatabaseProvider = (UserDataProvider) context.getBean("myWebServiceDatabaseProvider");

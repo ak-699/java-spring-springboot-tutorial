@@ -11,5 +11,8 @@
     </bean>
     <bean id="myNewDatabaseProvider" class="com.loose.coupling.WebServiceDatabaseProvider" >
     </bean>
+    <bean id="myUserManager" class="com.loose.coupling.UserManager" >
+        <constructor-arg ref="myDatabaseProvider" />
+    </bean>
 
 </beans>
