@@ -6,7 +6,7 @@
 
     <!-- bean definitions here -->
     <bean id="carSpecification" class="car.example.constructor.injection.Specification" >
-        <property name="make" value="Toyota"></property>
-        <property name="model" value="Corolla"></property>
+        <property name="make" value="Toyota" />
+        <property name="model" value="Corolla" />
     </bean>
 </beans>
